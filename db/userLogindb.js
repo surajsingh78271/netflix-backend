@@ -6,11 +6,11 @@ const connectDb = async (DATABASE_URL) => {
     try {
        return await  mongoose.connect(DATABASE_URL,{
         dbName: "netflix-clone",
-        strictQuery:false
-        // useNewUrlParser: true,
-        // useUnifiedTopology: true,
-        //  serverApi: "ServerApiVersion.v1",
-        // useFindAndModify: false
+        strictQuery:false,
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+         serverApi: "ServerApiVersion.v1",
+        useFindAndModify: false
        }).then(()=>{
     console.log("connected successfully mongodb")
 
