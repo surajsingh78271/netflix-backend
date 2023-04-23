@@ -9,14 +9,14 @@ const connectDb = async (DATABASE_URL) => {
         
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        serverApi: "ServerApiVersion.v1",
+        serverApi: "ServerApiVersion.v1"
         // {
         //     version: "ServerApiVersion.v1",
         //     strictQuery:false,
         //     deprecationErrors: true
 
         // },
-        useFindAndModify: false,
+        // useFindAndModify: false,
         
        }).then(()=>{
     console.log("connected successfully mongodb")
