@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
     name: String,
     email:  String,
     password: {type: String}
-},{strict:true,strictQuery:true});
+},{strict:false,strictQuery:false});
 
 
 

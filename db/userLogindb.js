@@ -11,7 +11,7 @@ const connectDb = async (DATABASE_URL) => {
         useUnifiedTopology: true,
         serverApi: {
             version: "ServerApiVersion.v1",
-            strictQuery:true,
+            strictQuery:false,
             deprecationErrors: true
 
         },
