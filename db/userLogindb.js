@@ -9,13 +9,11 @@ const connectDb = async (DATABASE_URL) => {
         
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        serverApi: "ServerApiVersion.v1"
-        // {
-        //     version: "ServerApiVersion.v1",
-        //     strictQuery:false,
-        //     deprecationErrors: true
-
-        // },
+        serverApi: {
+            version: "ServerApiVersion.v1",
+            // strictQuery:false,
+            // deprecationErrors: true
+        },
         // useFindAndModify: false,
         
        }).then(()=>{
