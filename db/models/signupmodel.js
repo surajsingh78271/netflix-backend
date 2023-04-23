@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
     password:  String
 })
   
-  mongoose.set(strictQuery,true)
+  mongoose.set("strictQuery","true")
 
 
 const userModel = new mongoose.model("usersignup",userSchema);
