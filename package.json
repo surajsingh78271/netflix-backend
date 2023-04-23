@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev1": "nodemon index.js",
+    "abc": "nodemon index.js",
+    "build": "cd frontend && npm run build",
+    "install-frontend": "cd frontend && npm install",
+    "heroku-postbuild": "npm run install-frontend && npm run build",
+    "start": "node index.js",
+    "frontend": "cd frontend && npm start",
+    "dev": "concurrently -n 'index,frontend' -c 'red,green' \"nodemon index.js\"\"npm run frontend\""
+
+
+  },
+  "author": "suraj-singh",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.8",
+    "nodemon": "^2.0.16"
+  }
+}
