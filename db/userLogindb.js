@@ -13,7 +13,7 @@ const connectDb = async (DATABASE_URL) => {
         //     strictQuery:false,
         //     deprecationErrors: true
         // },
-        useFindAndModify: false
+        // useFindAndModify: false
         
        }).then(()=>{
     console.log("connected successfully mongodb")
