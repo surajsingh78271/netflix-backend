@@ -8,6 +8,7 @@ const connectDb = async (DATABASE_URL) => {
         // dbName: "netflix-clone",
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        
         // serverApi: {
         //     version: "ServerApiVersion.v1",
         //     strictQuery:false,
