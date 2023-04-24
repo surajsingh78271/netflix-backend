@@ -5,15 +5,14 @@ const mongoose = require('mongoose')
 const connectDb = async (DATABASE_URL) => {
     try {
        return await  mongoose.connect(DATABASE_URL,{
-        dbName: "netflix-clone",
-        
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        serverApi: {
-            version: "ServerApiVersion.v1",
-            // strictQuery:false,
-            // deprecationErrors: true
-        },
+        dbName: "netflix-clone"
+        // useNewUrlParser: true,
+        // useUnifiedTopology: true,
+        // serverApi: {
+        //     version: "ServerApiVersion.v1",
+        //     strictQuery:false,
+        //     deprecationErrors: true
+        // },
         // useFindAndModify: false,
         
        }).then(()=>{
